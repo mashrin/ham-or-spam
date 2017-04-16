@@ -1,5 +1,8 @@
 <h2>Ham-or-Spam</h2>
-[![Build status](https://api.travis-ci.org/inderpartap/ham-or-spam.svg)](https://travis-ci.org/inderpartap/ham-or-spam)  [![Requirements Status](https://requires.io/github/inderpartap/ham-or-spam/requirements.svg?branch=master)](https://requires.io/github/inderpartap/ham-or-spam/requirements/?branch=master)
+[![Build Status](https://travis-ci.org/inderpartap/ham-or-spam.svg?branch=master)](https://travis-ci.org/inderpartap/ham-or-spam)
+
+[![Requirements Status](https://requires.io/github/inderpartap/ham-or-spam/requirements.svg?branch=master)](https://requires.io/github/inderpartap/ham-or-spam/requirements/?branch=master)
+
 
 > An intelligent spam filtering system built using a **custom Naive Bayes classifier**
 
