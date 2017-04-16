@@ -12,14 +12,14 @@ clean:
 
 run-background: clean
 	# when running in CI server
-	nohup gunicorn --pythonpath plino app:app &
+	nohup gunicorn --pythonpath ham-or-spam app:app &
 
 run: clean
 	# to be used when testing locally
-	gunicorn --pythonpath plino app:app
+	gunicorn --pythonpath ham-or-spam app:app
 
 test-api: clean run-background
-	# for testing api responses (test_plino_app_api_response.py)
+	# for testing api responses (test_ham-or-spam_app_api_response.py)
 	nosetests
 
 deploy: clean

@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath plino app:app
+web: gunicorn --pythonpath ham-or-spam app:app
