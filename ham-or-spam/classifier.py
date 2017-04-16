@@ -153,7 +153,7 @@ class NaiveBayesClassifier(object):
 
     def classify(self, features):
         """
-        Writing the actual interface for the class here. Thi will classify our
+        Writing the actual interface for the class here. This will classify our
         documents when called from the terminal
 
         ## TO-DO

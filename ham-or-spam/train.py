@@ -17,7 +17,7 @@ import logging
 import bs4
 from termcolor import colored
 
-# specify the folder `/path_to_ham-or-or-spam_nltk_data/` as heroku will not be having
+# specify the folder `/path_to_ham-or-spam_nltk_data/` as heroku will not be having
 # the nltk installed in it!
 APP = os.path.abspath(__file__)
 FILE_DIR, APP_NAME = os.path.split(APP)
