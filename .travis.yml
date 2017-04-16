@@ -3,9 +3,6 @@ language: python
 python:
   - "2.7"
 
-install:
-  - pip install -r requirements.txt
-
 before_script:
   - "make run-background"  # run gunicorn server
   - sleep 5  # # give Web server some time to bind to sockets, etc
