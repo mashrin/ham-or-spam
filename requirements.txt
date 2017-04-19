@@ -1,4 +1,4 @@
-# https://github.com/prodicus/spamfilter specific requirements
+# Ham-or-spam specific requirements
 beautifulsoup4==4.5.3
 dill==0.2.6
 nltk==3.2.2
