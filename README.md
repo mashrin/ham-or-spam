@@ -19,16 +19,11 @@
 - [Technologies used](#technologies-used)
     - [Backend](#backend)
     - [Front end](#front-end)
-- [Contributing](#contributing)
+- [Contributing](#testing)
     - [Installing it locally](#installing-it-locally)
     - [Running it](#running-it)
     - [Contributers](#contributers)
-- [FAQ](#faq)
-    - [What is the classifier based on](#what-is-the-classifier-based-on)
-    - [What did you train the classifier on](#what-did-you-train-the-classifier-on)
-    - [How accurate is it](#how-accurate-is-it)
 - [Roadmap](#roadmap)
-- [Legal stuff](#legal-stuff)
 
 ***
 
