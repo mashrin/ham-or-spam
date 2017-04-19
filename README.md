@@ -6,7 +6,7 @@
 
 > An intelligent spam filtering system built using a **custom Naive Bayes classifier**
 
-**:arrow_forward: You can try it out here at [https://ham-or-spam.heroku.com/](https://ham-or-spam.heroku.com/)**
+**:arrow_forward: You can try it out here at [https://ham-or-spam.herokuapp.com/](https://ham-or-spam.herokuapp.com/)**
 
 ***
 
@@ -188,8 +188,8 @@ Built upon the giant shoulders of (__in no particular order__)
 ```bash
 $ virtualenv env              # Create virtual environment
 $ source env/bin/activate     # Change default python to virtual one
-(env)$ git clone https://github.com/prodicus/plino.git
-(env)$ cd plino
+(env)$ git clone https://github.com/prodicus/ham-or-spam.git
+(env)$ cd ham-orspam
 (env)$ pip install -r requirements.txt
 ```
 
