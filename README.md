@@ -45,7 +45,7 @@ Yes, we do provide an **API** for our service!
 $ curl -H "Content-Type: application/json" -X \
 POST -d \
 '{"email_text":"SAMPLE EMAIL TEXT"}' \
-https://plino.herokuapp.com/api/v1/classify/
+https://ham-or-spam.herokuapp.com/api/v1/classify/
 ```
 
 **Show me an example**
@@ -55,8 +55,8 @@ You thought I was lying!
 ```bash
 $ curl -H "Content-Type: application/json" \
 -X POST -d \
-'{"email_text":"Dear Tasdik, I would like to immediately transfer 10000 thousand dollars to your account as my beloved husband has expired and I have nobody to ask for to transfer the money to your account. I come from the family of the royal prince of burkino fasa and I would be more than obliged to take your help on this matter. Would you care to share your bank account details with me in the next email conversation that we have? -regards -Liah herman"}' \
-https://plino.herokuapp.com/api/v1/classify/
+'{"email_text":"Dear Inderpartap, I would like to immediately transfer 10000 thousand dollars to your account as my beloved husband has expired and I have nobody to ask for to transfer the money to your account. I come from the family of the royal prince of burkino fasa and I would be more than obliged to take your help on this matter. Would you care to share your bank account details with me in the next email conversation that we have? -regards -Liah herman"}' \
+https://ham-or-spam.herokuapp.com/api/v1/classify/
 ```
 
 **JSON response**
@@ -64,7 +64,7 @@ https://plino.herokuapp.com/api/v1/classify/
 ```python
 {
   "email_class": "spam", 
-  "email_text": "Dear Tasdik, I would like to immediately transfer 10000 thousand dollars to your account as my beloved husband has expired and I have nobody to ask for to transfer the money to your account. I come from the family of the royal prince of burkino fasa and I would be more than obliged to take your help on this matter. Would you care to share your bank account details with me in the next email conversation that we have? -regards -Liah herman", 
+  "email_text": "Dear Inderpartap, I would like to immediately transfer 10000 thousand dollars to your account as my beloved husband has expired and I have nobody to ask for to transfer the money to your account. I come from the family of the royal prince of burkino fasa and I would be more than obliged to take your help on this matter. Would you care to share your bank account details with me in the next email conversation that we have? -regards -Liah herman", 
   "status": 200
 }
 ```
@@ -72,17 +72,16 @@ https://plino.herokuapp.com/api/v1/classify/
 #### using `requests`
 [:arrow_up: Back to top](#table-of-contents)
 
-How can we forget our beloved [`requests`](https://github.com/kennethreitz/requests) module!
 
 ```python
 >>> import requests
 >>> import json
 >>> import pprint
 >>>
->>> api_url = "https://plino.herokuapp.com/api/v1/classify/"
+>>> api_url = "https://ham-or-spam.herokuapp.com/api/v1/classify/"
 >>> payload = \
 {
-'email_text': 'Dear Tasdik, I would like to immediately transfer 10000 '
+'email_text': 'Dear Inderpartap, I would like to immediately transfer 10000 '
                'thousand dollars to your account as my beloved husband has '
                'expired and I have nobody to ask for to transfer the money '
                'to your account. I come from the family of the royal prince '
@@ -100,7 +99,7 @@ How can we forget our beloved [`requests`](https://github.com/kennethreitz/reque
 >>> pprint.pprint(response.json())
 {
  'email_class': 'spam',
- 'email_text': 'Dear Tasdik, I would like to immediately transfer 10000 '
+ 'email_text': 'Dear Inderpartap, I would like to immediately transfer 10000 '
                'thousand dollars to your account as my beloved husband has '
                'expired and I have nobody to ask for to transfer the money '
                'to your account. I come from the family of the royal prince '
@@ -123,7 +122,7 @@ How can we forget our beloved [`requests`](https://github.com/kennethreitz/reque
 >>> import json
 >>> import pprint 
 >>>
->>> url = "https://plino.herokuapp.com/api/v1/classify/"
+>>> url = "https://ham-or-spam.herokuapp.com/api/v1/classify/"
 >>> req = urllib.request.Request(url)
 >>> req.add_header(
        'Content-Type',
@@ -131,7 +130,7 @@ How can we forget our beloved [`requests`](https://github.com/kennethreitz/reque
    )
 >>>
 >>> body = \
-{'email_text': 'Dear Tasdik, I would like to immediately transfer 10000 '
+{'email_text': 'Dear Inderpartap, I would like to immediately transfer 10000 '
                'thousand dollars to your account as my beloved husband has '
                'expired and I have nobody to ask for to transfer the money '
                'to your account. I come from the family of the royal prince '
@@ -148,7 +147,7 @@ How can we forget our beloved [`requests`](https://github.com/kennethreitz/reque
 ... 
 {
   "email_class": "spam", 
-  "email_text": "Dear Tasdik, I would like to immediately transfer 10000 thousand dollars to your account as my beloved husband has expired and I have nobody to ask for to transfer the money to your account. I come from the family of the royal prince of burkino fasa and I would be more than obliged to take your help on this matter. Would you care to share your bank account details with me in the next email conversation that we have? -regards -Liah herman", 
+  "email_text": "Dear Inderpartap, I would like to immediately transfer 10000 thousand dollars to your account as my beloved husband has expired and I have nobody to ask for to transfer the money to your account. I come from the family of the royal prince of burkino fasa and I would be more than obliged to take your help on this matter. Would you care to share your bank account details with me in the next email conversation that we have? -regards -Liah herman", 
   "status": 200
 }
 >>> 
@@ -170,7 +169,7 @@ Built upon the giant shoulders of (__in no particular order__)
 - [Jinja2](http://jinja.pocoo.org/) as the templating engine
 - [dill](https://pypi.python.org/pypi/dill) for de-serializing complex python objects
 
-[and some more](https://github.com/prodicus/plino/blob/master/requirements.txt)
+[and some more](https://github.com/inderpartap/ham-or-spam/blob/master/requirements.txt)
 
 #### Front end
 
@@ -188,8 +187,8 @@ Built upon the giant shoulders of (__in no particular order__)
 ```bash
 $ virtualenv env              # Create virtual environment
 $ source env/bin/activate     # Change default python to virtual one
-(env)$ git clone https://github.com/prodicus/ham-or-spam.git
-(env)$ cd ham-orspam
+(env)$ git clone https://github.com/inderpartap/ham-or-spam.git
+(env)$ cd ham-or-spam
 (env)$ pip install -r requirements.txt
 ```
 
