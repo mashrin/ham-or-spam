@@ -193,12 +193,6 @@ $ source env/bin/activate     # Change default python to virtual one
 $ make run
 ```
 
-
-#### Contributers
-
-- [Raghav Kakkar (rkakkar7)](https://github.com/rkakkar7) : **UI dev**
-- [Sudhanva Devanathan (agreedplains3)](https://github.com/agreedplains3): **Test cases**
-
 ***
 
 ## Roadmap
