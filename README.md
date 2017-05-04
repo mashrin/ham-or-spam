@@ -1,4 +1,4 @@
-<h2>Ham-or-Spam</h2>
+<h2>spam-filtering</h2>
 
 [![Requirements Status](https://requires.io/github/inderpartap/ham-or-spam/requirements.svg?branch=master)](https://requires.io/github/inderpartap/ham-or-spam/requirements/?branch=master)
 <br>
@@ -6,7 +6,7 @@
 
 > An intelligent spam filtering system built using a **custom Naive Bayes classifier**
 
-**:arrow_forward: You can try it out here at [https://ham-or-spam.herokuapp.com/](https://spam-filtering.herokuapp.com/)**
+**:arrow_forward: You can try it out here at [https://spam-filtering.herokuapp.com/](https://spam-filtering.herokuapp.com/)**
 
 ***
 
