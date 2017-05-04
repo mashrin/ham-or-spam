@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Author: Inderpartap Cheema
-# @Date:   2017-02-10
-# @Last Modified by:   Inderpartap Cheema
+# @Date:   2017-04-10
 # @Last Modified time: 2017-04-16 19:30:00
 # @GPLv3 License
 
