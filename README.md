@@ -6,7 +6,7 @@
 
 > An intelligent spam filtering system built using a **custom Naive Bayes classifier**
 
-**:arrow_forward: You can try it out here at [https://ham-or-spam.herokuapp.com/](https://ham-or-spam.herokuapp.com/)**
+**:arrow_forward: You can try it out here at [https://ham-or-spam.herokuapp.com/](https://spam-filtering.herokuapp.com/)**
 
 ***
 
